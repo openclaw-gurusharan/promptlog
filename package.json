@@ -1,0 +1,22 @@
+{
+  "name": "promptlog",
+  "version": "1.0.0",
+  "description": "Lightweight REST API to log, tag and query LLM prompt/response pairs",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "echo 'no linter configured'"
+  },
+  "dependencies": {
+    "express": "^4.18.3",
+    "lowdb": "^7.0.1"
+  },
+  "devDependencies": {
+    "vitest": "^1.4.0",
+    "supertest": "^7.0.0"
+  }
+}
